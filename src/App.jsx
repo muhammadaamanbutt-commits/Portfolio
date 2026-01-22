@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import BackgroundEffects from './components/BackgroundEffects';
+import MouseSpotlight from './components/MouseSpotlight';
 import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
@@ -37,13 +38,16 @@ const App = () => {
   }, []);
 
   return (
-    <main className="container-fluid pt-0 pb-4">
-      <div className="intro">
-        <Sidebar activeSection={activeSection} />
-        <MainContent />
-      </div>
-      <BackgroundEffects />
-    </main>
+    <>
+      <MouseSpotlight />
+      <main className="container-fluid pt-0 pb-4">
+        <div className="intro">
+          <Sidebar activeSection={activeSection} />
+          <MainContent />
+        </div>
+        <BackgroundEffects />
+      </main>
+    </>
   );
 };
 

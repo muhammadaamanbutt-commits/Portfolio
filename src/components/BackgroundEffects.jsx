@@ -5,8 +5,8 @@ import '../css/style.css';
 const BackgroundEffects = () => {
     useEffect(() => {
         const handleMouseMove = (e) => {
-            const x = (window.innerWidth / 2 - e.clientX) / 25;
-            const y = (window.innerHeight / 2 - e.clientY) / 25;
+            const x = (window.innerWidth / 2 - e.clientX) / 10;
+            const y = (window.innerHeight / 2 - e.clientY) / 10;
 
             const card = document.getElementById('myCard');
             const card2 = document.getElementById('myCard2');

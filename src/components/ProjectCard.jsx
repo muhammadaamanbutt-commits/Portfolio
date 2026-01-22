@@ -1,11 +1,11 @@
 import React from 'react';
 import '../css/style.css';
 
-const ProjectCard = ({ title, description }) => (
-    <a href="#" className="project-card mb-5">
+const ProjectCard = ({ title, description, projectimage, link }) => (
+    <a href={link} className="project-card mb-1">
         <div data-aos="fade-left" data-aos-duration="500" className="row d-flex flex-row gap-3">
             <div className="col-md-3 col-lg-3 thumbnail-container">
-                <div className="thumbnail"></div>
+                <div className="thumbnail"><img src={projectimage} alt={title} className="thumbnail" /></div>
             </div>
             <div className="col-md-9 col-lg-9 w-100">
                 <h3 className="project-title">

@@ -8,7 +8,7 @@ const Sidebar = ({ activeSection }) => {
         <header>
             <div data-aos="fade-right" data-aos-duration="500" data-aos-once="true" className='aboutdiv'>
                 <div id="profile-pic" className="col-md-4 mb-4 mb-md-0">
-                    <a href="#main">
+                    <a href="#about">
                         <img
                             src={image}
                             alt="M. Aaman Butt"
@@ -25,7 +25,7 @@ const Sidebar = ({ activeSection }) => {
                 <nav>
                     <ul className="d-flex flex-column flex-wrap justify-content-center justify-content-md-start mb-4">
                         <li>
-                            <a href="#main" className={activeSection === 'about' ? 'active' : ''}>About</a>
+                            <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
                         </li>
                         <li>
                             <a href="#resume" className={activeSection === 'resume' ? 'active' : ''}>Resume</a>
