@@ -37,7 +37,7 @@ const App = () => {
   }, []);
 
   return (
-    <main className="container py-4">
+    <main className="container-fluid pt-0 pb-4">
       <div className="intro">
         <Sidebar activeSection={activeSection} />
         <MainContent />
