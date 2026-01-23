@@ -3,7 +3,7 @@ import '../css/style.css';
 
 const AboutSection = () => (
     <section id="about" className="mb-5 " >
-        <p data-aos="fade-left" data-aos-duration="800"> 
+        <p data-aos="fade-left" data-aos-duration="800">
             I’m a <span class="text-light">MERN Stack developer</span> and <span class="text-light">Frontend
                 Engineer</span> specializing in <b>web
                     accessibility</b>,
@@ -18,8 +18,7 @@ const AboutSection = () => (
                 stack</span> (MongoDB,
             Express,
             React, Node.js), with a strong emphasis on <b>clean architecture</b>, <b>reusable
-                components</b>, and <b>scalable frontend systems</b>. I’m experienced in
-            <b>component-driven development</b>, <b>CI/CD workflows</b>, and maintaining design
+                components</b>, and <b>scalable frontend systems</b>. I’m experienced <b>incomponent-driven development</b>, <b>CI/CD workflows</b>, and maintaining design
             systems that stay
             consistent as projects grow.
         </p>
@@ -29,8 +28,7 @@ const AboutSection = () => (
             showcase real-world, <b>API-driven architecture</b>, reinforcing my expertise in <span
                 class="text-light">Full-Stack
                 development</span>, <span class="text-light">REST
-                    APIs</span>, and
-            <span class="text-light">Frontend Engineering</span>. I regularly experiment with new tools and
+                    APIs</span>, and <span class="text-light">Frontend Engineering</span>. I regularly experiment with new tools and
             frameworks, contribute to
             open-source projects,
             and

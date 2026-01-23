@@ -3,28 +3,36 @@ import AboutSection from './AboutSection';
 import ResumeSection from './ResumeSection';
 import ProjectSection from './ProjectSection';
 import brarchitectsImage from '../assets/projects/br-architects.png';
+import creativeDigitalAgencyImage from '../assets/projects/creative-digital-agency.png';
+import myWebsiteImage from '../assets/projects/my-website.png';
+import fastFoodRestaurantImage from '../assets/projects/fast-food-restaurant.png';
 import '../css/style.css';
 
 const MainContent = () => {
-    // EDIT YOUR DATA HERE:
     const myProjects = [
         {
             title: "BR Architects",
-            description: "A web app built with React and the OpenWeather API.",
+            description: "I developed this responsive architectural portfolio for BR Architects, integrating a curated project showcase, custom FAQ accordions, and leadership bios. The platform features a responsive contact system designed to streamline client communication.",
             projectimage: brarchitectsImage,
             link: "https://br-architects-kappa.vercel.app/"
         },
         {
-            title: "Portfolio Site",
-            description: "A pixel-perfect MERN stack portfolio.",
-            projectimage: <img src="path/to/portfolio-image.jpg" alt="Portfolio Site" />,
-            link: "www.google.com"
+            title: "Creative Digital Agency",
+            description: "I developed this comprehensive digital agency platform offering specialized web development, graphic design, and marketing services. It features structured pricing plans, client testimonials, and a blog to ensure professional brand building.",
+            projectimage: creativeDigitalAgencyImage,
+            link: "https://creative-digital-agency-jet.vercel.app/"
         },
         {
-            title: "Portfolio Site",
-            description: "A pixel-perfect MERN stack portfolio.",
-            projectimage: <img src="path/to/portfolio-image.jpg" alt="Portfolio Site" />,
-            link: "www.google.com"
+            title: "My Website",
+            description: "I developed this professional business platform featuring seamless integrations with Google, Facebook, and Instagram. The site includes specialized sections for blogging, strategic pricing, and system integrations, ensuring a streamlined digital experience.",
+            projectimage: myWebsiteImage,
+            link: "https://my-website-two-vert.vercel.app/"
+        },
+        {
+            title: "Fast Food Restaurant",
+            description: "I engineered this responsive fast-food platform featuring an interactive menu system, promotional discount management, and an integrated table booking module. The site optimizes the digital dining experience through clean, intuitive navigation.",
+            projectimage: fastFoodRestaurantImage,
+            link: "https://fast-food-restaurant-red.vercel.app/"
         }
     ];
 
@@ -33,7 +41,7 @@ const MainContent = () => {
             {/* You can now reuse the component for different categories */}
             <AboutSection />
             <ResumeSection />
-            <ProjectSection title="My Projects" projectsData={myProjects} />
+            <ProjectSection title="Projects" projectsData={myProjects} />
 
             {/* You could even call it again with different data */}
             {/* <ProjectSection title="Minor Tasks" projectsData={otherData} /> */}

@@ -20,7 +20,7 @@ const MouseSpotlight = () => {
         height: '100vh',
         pointerEvents: 'none',
         zIndex: 1,
-        background: `radial-gradient(400px at ${position.x}px ${position.y}px, #5eead521, transparent 80%)`,
+        background: `radial-gradient(100px at ${position.x}px ${position.y}px, #42b7a621, transparent 250%)`,
         transition: 'background 0.3s ease',
     };
 

@@ -10,7 +10,7 @@ const resumeSkills = [
 
 const ExperienceCard = ({ date, title, subtitle, description, skills }) => (
     <>
-        <a href="./Assets/Resume/Resume.pdf" className="experience-card mb-4">
+        <a href="https://drive.google.com/file/d/10MR5c12XlPG-ka69pvI4bGdn5pXAdFbt/view?usp=sharing" className="experience-card mb-4">
             <div data-aos="fade-left" data-aos-duration="500" className="row">
                 <div className="col-md-3 date-col mb-2 mb-md-0">{date}</div>
                 <div className="col-md-9">
