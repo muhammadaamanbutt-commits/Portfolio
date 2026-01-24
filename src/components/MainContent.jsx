@@ -23,7 +23,7 @@ const MainContent = () => {
             link: "https://creative-digital-agency-jet.vercel.app/"
         },
         {
-            title: "My Website",
+            title: "Nexus Connect",
             description: "I developed this professional business platform featuring seamless integrations with Google, Facebook, and Instagram. The site includes specialized sections for blogging, strategic pricing, and system integrations, ensuring a streamlined digital experience.",
             projectimage: myWebsiteImage,
             link: "https://my-website-two-vert.vercel.app/"
