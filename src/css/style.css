@@ -437,7 +437,6 @@ nav a.active::before {
 
     .social-icons {
         justify-content: center;
-        /* Icons ko center mein align kiya [7] */
     }
 
     .experience-card,

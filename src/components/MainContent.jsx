@@ -38,13 +38,9 @@ const MainContent = () => {
 
     return (
         <div>
-            {/* You can now reuse the component for different categories */}
             <AboutSection />
             <ResumeSection />
             <ProjectSection title="Projects" projectsData={myProjects} />
-
-            {/* You could even call it again with different data */}
-            {/* <ProjectSection title="Minor Tasks" projectsData={otherData} /> */}
         </div>
     );
 };

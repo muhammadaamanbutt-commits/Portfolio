@@ -24,7 +24,6 @@ const App = () => {
         const section = document.getElementById(id);
         if (section) {
           const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
-          // Logic from source: current section is determined by scroll position [3]
           if (window.pageYOffset >= sectionTop - 200) {
             current = id;
           }
