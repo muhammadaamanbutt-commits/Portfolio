@@ -33,6 +33,23 @@ body {
     margin: 0;
 }
 
+
+.spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+
+    background: radial-gradient(500px at var(--x) var(--y),
+            rgba(29, 78, 216, 0.15),
+            transparent 80%);
+
+    transition: background 0.3s ease;
+}
+
 /*LAYOUT CONTAINERS */
 
 .intro {
@@ -366,7 +383,7 @@ nav a.active::before {
 
 /*BACKGROUND DECORATION (Animated Circles) */
 
-#bgcircle,
+/* #bgcircle,
 #bgcircle2 {
     position: fixed;
     top: 0;
@@ -398,6 +415,36 @@ nav a.active::before {
     position: fixed;
     right: 30%;
     top: 65%;
+} */
+
+#bgcircle,
+#bgcircle2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#myCard {
+    background: #1e2c50;
+    position: fixed;
+    top: 15vh;
+    right: 30vw;
+    padding: 150px;
+    border-radius: 50%;
+}
+
+#myCard2 {
+    background: #15203b;
+    position: fixed;
+    top: 65vh;
+    right: 30vw;
+    padding: 50px;
+    border-radius: 50%;
 }
 
 
@@ -405,6 +452,10 @@ nav a.active::before {
 /*RESPONSIVE MEDIA QUERIES */
 
 @media (max-width: 1024px) {
+
+    .spotlight {
+        display: none;
+    }
 
     .intro {
         flex-direction: column;
@@ -452,7 +503,38 @@ nav a.active::before {
         align-items: center;
     }
 
+    @keyframes floatY {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-25px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
     #myCard {
+        position: fixed;
+        top: 5vh;
+        /* right: 35vw; */
+        /* margin: 0 auto; */
+
+        animation: floatY 2s ease-in-out infinite;
+        animation-delay: 1s;
+        /* animation: floatY 2s ease-in-out infinite; */
+    }
+
+    #myCard2 {
+        top: 50vh;
+        /* right: 30vw; */
+        animation: floatY 2s ease-in-out infinite;
+    }
+
+    /* #myCard {
         overflow-x: hidden !important;
         right: 35%;
         top: 10%;
@@ -462,7 +544,7 @@ nav a.active::before {
         overflow-x: hidden !important;
         right: 35%;
         top: 55%;
-    }
+    } */
 
     .aboutdiv {
         text-align: center;
@@ -473,8 +555,22 @@ nav a.active::before {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+
+
+
     #myCard {
+        position: fixed;
+        top: 5vh;
+        right: 16vw;
+    }
+
+    #myCard2 {
+        top: 50vh;
+        right: 18vw;
+    }
+
+    /* #myCard {
         overflow-x: hidden !important;
         right: 10%;
         top: 10%;
@@ -484,7 +580,7 @@ nav a.active::before {
         overflow-x: hidden !important;
         right: 20%;
         top: 55%;
-    }
+    } */
 }
 
 

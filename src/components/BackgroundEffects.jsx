@@ -4,6 +4,10 @@ import '../css/style.css';
 
 const BackgroundEffects = () => {
     useEffect(() => {
+        const isMobile = window.matchMedia('(max-width: 1024)').matches;
+
+        if (isMobile) return; // 👈 animation hi skip
+
         const handleMouseMove = (e) => {
             const x = (window.innerWidth / 2 - e.clientX) / 10;
             const y = (window.innerHeight / 2 - e.clientY) / 10;
@@ -12,10 +16,19 @@ const BackgroundEffects = () => {
             const card2 = document.getElementById('myCard2');
 
             if (card) {
-                card.style.transform = `translateX(${x}px) translateY(${y}px) rotateX(${-y * 0.05}deg) rotateY(${x * 0.05}deg)`;
+                card.style.transform = `
+        translate(${x}px, ${y}px)
+        rotateX(${-y * 0.05}deg)
+        rotateY(${x * 0.05}deg)
+      `;
             }
+
             if (card2) {
-                card2.style.transform = `translateX(${-x * 0.8}px) translateY(${-y * 0.8}px) rotateX(${y * 0.1}deg) rotateY(${-x * 0.1}deg)`;
+                card2.style.transform = `
+        translate(${-x * 0.8}px, ${-y * 0.8}px)
+        rotateX(${y * 0.1}deg)
+        rotateY(${-x * 0.1}deg)
+      `;
             }
         };
 

@@ -1,12 +1,7 @@
 import React from 'react';
-import TechStack from './TechStack';
 import '../css/style.css';
 
-const resumeSkills = [
-    "HTML & CSS", "Bootstrap", "Tailwind", "JavaScript",
-    "TypeScript", "MongoDB", "Express.js", "React",
-    "React Native", "Next.js", "Node.js"
-];
+
 
 const ExperienceCard = ({ date, title, subtitle, description, skills }) => (
     <>

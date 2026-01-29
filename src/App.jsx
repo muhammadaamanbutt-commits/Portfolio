@@ -10,8 +10,6 @@ import AOS from 'aos';
 AOS.init();
 
 
-
-
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
 
