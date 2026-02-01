@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialLinks from './SocialLinks';
 import '../css/style.css';
 import image from '../assets/profile-pic.png';
@@ -12,6 +11,7 @@ const Sidebar = ({ activeSection }) => {
                         <img
                             src={image}
                             alt="M. Aaman Butt"
+                            loading="lazy"
                             className="profile-pic rounded-circle"
                         />
                     </a>
@@ -23,7 +23,7 @@ const Sidebar = ({ activeSection }) => {
                 </p>
 
                 <nav>
-                    <ul className="d-flex flex-column flex-wrap justify-content-center justify-content-md-start mb-4">
+                    <ul className="d-flex flex-row flex-md-column flex-wrap justify-content-center justify-content-md-start mb-4">
                         <li>
                             <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
                         </li>

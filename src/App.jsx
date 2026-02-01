@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import MainContent from './components/MainContent';
 import BackgroundEffects from './components/BackgroundEffects';
@@ -7,13 +7,15 @@ import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-AOS.init();
+
 
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
+    
+    AOS.init();
     const handleScroll = () => {
       const sections = ['about', 'resume', 'projectsection'];
       let current = "";

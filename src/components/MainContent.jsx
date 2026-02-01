@@ -1,4 +1,3 @@
-import React from 'react';
 import AboutSection from './AboutSection';
 import ResumeSection from './ResumeSection';
 import ProjectSection from './ProjectSection';
