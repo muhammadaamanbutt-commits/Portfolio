@@ -490,32 +490,16 @@ nav a.active::before {
         padding: 2rem 0;
     }
 
-    /* nav {
-        display: block !important;
-        z-index: 1000;
-        width: 25%;
-        margin-top: 0;
-        margin-bottom: 2rem;
-        border-radius: 60px;
-        padding: 0.75rem 1.5rem 0 1.5rem;
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    } */
-
     nav {
         width: 90% !important;
         max-width: 400px !important;
         margin: 0 !important;
         margin-bottom: 30px !important;
-
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
         border-radius: 2rem !important;
         box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3) !important;
-
         padding: 2rem 0.5rem 0.5rem 0.5rem !important;
         z-index: 9999 !important;
 
@@ -553,6 +537,7 @@ nav a.active::before {
     }
 
     /* Active & Hover state for mobile */
+
     nav a:hover,
     nav a.active {
         color: #94a3b8 !important;
@@ -602,6 +587,7 @@ nav a.active::before {
     }
 
     /* Background animations adjustments */
+
     @keyframes floatY {
         0% {
             transform: translateY(0);
@@ -636,7 +622,6 @@ nav a.active::before {
         left: 50%;
         right: auto;
         transform: translate(-50%, 0);
-        /* Initial position before animation starts */
         animation: floatYCentered 2s ease-in-out infinite;
         animation-delay: 1s;
         opacity: 0.5;
@@ -644,21 +629,8 @@ nav a.active::before {
 
     #myCard2 {
         top: 50vh;
-        /* right: 30vw; */
         animation: floatY 2s ease-in-out infinite;
     }
-
-    /* #myCard {
-        overflow-x: hidden !important;
-        right: 35%;
-        top: 10%;
-    }
-
-    #myCard2 {
-        overflow-x: hidden !important;
-        right: 35%;
-        top: 55%;
-    } */
 
     .aboutdiv {
         text-align: center;
@@ -671,6 +643,7 @@ nav a.active::before {
 }
 
 /* Tablet & Smaller Devices */
+
 @media (max-width: 768px) {
     .thumbnail-container .thumbnail {
         width: 100%;
@@ -682,7 +655,8 @@ nav a.active::before {
         font-size: 2.5rem;
     }
 
-    /* Floating Bottom Navigation (<768px) */
+/* Floating Bottom Navigation (<768px) */
+
     nav {
         width: 90% !important;
         max-width: 400px !important;
@@ -705,7 +679,6 @@ nav a.active::before {
         gap: 0 !important;
         width: 100%;
         margin-top: 25px !important;
-        /* margin: 0 !important; */
     }
 
     nav li {
@@ -735,7 +708,6 @@ nav a.active::before {
 
 @media (max-width: 500px) {
     #myCard {
-        /* Inherit centering from larger media query */
         right: auto;
         left: 50%;
     }

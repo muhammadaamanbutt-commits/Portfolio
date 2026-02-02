@@ -6,7 +6,7 @@ const BackgroundEffects = () => {
     useEffect(() => {
         const isMobile = window.matchMedia('(max-width: 1024)').matches;
 
-        if (isMobile) return; // 👈 animation hi skip
+        if (isMobile) return;
 
         const handleMouseMove = (e) => {
             const x = (window.innerWidth / 2 - e.clientX) / 10;
