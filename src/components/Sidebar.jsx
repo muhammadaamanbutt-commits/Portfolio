@@ -25,13 +25,13 @@ const Sidebar = ({ activeSection }) => {
                 <nav>
                     <ul className="d-flex flex-row flex-md-column flex-wrap justify-content-center justify-content-md-start mb-4">
                         <li>
-                            <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a>
+                            <a href="#about" className={activeSection === 'about' ? 'active' : ''} aria-current={activeSection === 'about' ? 'section' : undefined}>About</a>
                         </li>
                         <li>
-                            <a href="#resume" className={activeSection === 'resume' ? 'active' : ''}>Resume</a>
+                            <a href="#resume" className={activeSection === 'resume' ? 'active' : ''} aria-current={activeSection === 'resume' ? 'section' : undefined}>Resume</a>
                         </li>
                         <li>
-                            <a href="#projectsection" className={activeSection === 'projectsection' ? 'active' : ''}>Projects</a>
+                            <a href="#projectsection" className={activeSection === 'projectsection' ? 'active' : ''} aria-current={activeSection === 'projectsection' ? 'section' : undefined}>Projects</a>
                         </li>
                     </ul>
                 </nav>

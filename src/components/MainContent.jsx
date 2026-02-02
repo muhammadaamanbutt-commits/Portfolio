@@ -44,7 +44,7 @@ const MainContent = () => {
     ];
 
     return (
-        <div>
+        <div id="main">
             <AboutSection />
             <ResumeSection />
             <ProjectSection title="Projects" projectsData={myProjects} />

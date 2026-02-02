@@ -12,7 +12,7 @@ const ResumeSection = () => {
 
     return (
         <div id="resume" className="container section-container">
-            <a href="https://drive.google.com/file/d/10MR5c12XlPG-ka69pvI4bGdn5pXAdFbt/view?usp=sharing" className="text-decoration-none">
+            <a href="https://drive.google.com/file/d/10MR5c12XlPG-ka69pvI4bGdn5pXAdFbt/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                 <h4 data-aos="fade-left" data-aos-duration="500" className="headings mb-3 job-title">
                     <span>Resume</span>
                     <svg className="arrow" viewBox="0 0 24 24" aria-hidden="true">

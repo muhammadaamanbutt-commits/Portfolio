@@ -14,8 +14,8 @@ const App = () => {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    
-    AOS.init();
+
+    AOS.init({ once: true, offset: 50 });
     const handleScroll = () => {
       const sections = ['about', 'resume', 'projectsection'];
       let current = "";

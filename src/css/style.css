@@ -56,7 +56,6 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 10%;
@@ -316,6 +315,26 @@ nav a.active::before {
     border: 1px solid transparent;
 }
 
+/* Project card: image on LEFT, text on RIGHT (always except small screens) */
+.project-card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.project-card-row .thumbnail-container {
+    flex: 0 0 auto;
+    width: 200px;
+    min-width: 200px;
+}
+
+.project-card-row .project-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
 .project-card:hover {
     background-color: var(--card-hover-bg);
     backdrop-filter: blur(8px);
@@ -360,6 +379,11 @@ nav a.active::before {
     background-position: center;
     border-radius: 4px;
     border: 2px solid #1e2c50;
+}
+
+.thumbnail-container img.thumbnail {
+    object-fit: cover;
+    object-position: center;
 }
 
 /*Tech Stack & Chips */
@@ -617,6 +641,7 @@ nav a.active::before {
     }
 
     #myCard {
+        background: #2f457d;
         position: fixed;
         top: 5vh;
         left: 50%;
@@ -628,6 +653,8 @@ nav a.active::before {
     }
 
     #myCard2 {
+        background: #15203b;
+        position: fixed;
         top: 50vh;
         animation: floatY 2s ease-in-out infinite;
     }
@@ -645,6 +672,17 @@ nav a.active::before {
 /* Tablet & Smaller Devices */
 
 @media (max-width: 768px) {
+
+    /* Stack project card (image above text) only on small screens */
+    .project-card-row {
+        flex-direction: column;
+    }
+
+    .project-card-row .thumbnail-container {
+        width: 100%;
+        min-width: unset;
+    }
+
     .thumbnail-container .thumbnail {
         width: 100%;
         height: auto;
@@ -655,7 +693,7 @@ nav a.active::before {
         font-size: 2.5rem;
     }
 
-/* Floating Bottom Navigation (<768px) */
+    /* Floating Bottom Navigation (<768px) */
 
     nav {
         width: 90% !important;
@@ -718,16 +756,17 @@ nav a.active::before {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .thumbnail-container {
         margin-bottom: 0;
         margin-top: 5px;
     }
 
-    .thumbnail {
-        width: 120px !important;
-        height: 70px !important;
-        aspect-ratio: auto !important;
+    /* Project card: thumbnail fills the left column */
+    .project-card-row .thumbnail-container .thumbnail {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9;
     }
 }
 
