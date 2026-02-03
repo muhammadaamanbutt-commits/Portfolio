@@ -3,7 +3,7 @@ import '../css/style.css';
 const AboutSection = () => (
     <section id="about" className="mb-5 " >
         <p data-aos="fade-left" data-aos-duration="800">
-            I’m a <span className="text-light">MERN Stack developer</span> and <span className="text-light">Frontend
+            I’m a <span className="text-emphasis">MERN Stack developer</span> and <span className="text-emphasis">Frontend
                 Engineer</span> specializing in <b>web
                     accessibility</b>,
             building <b>pixel-perfect</b>, <b>responsive</b>, and <b>intuitive user interfaces</b>. I love
@@ -13,7 +13,7 @@ const AboutSection = () => (
             development practices.
         </p>
         <p data-aos="fade-left" data-aos-duration="800">
-            Previously, I’ve built a wide range of web applications using the <span className="text-light">MERN
+            Previously, I’ve built a wide range of web applications using the <span className="text-emphasis">MERN
                 stack</span> (MongoDB,
             Express,
             React, Node.js), with a strong emphasis on <b>clean architecture</b>, <b>reusable
@@ -22,9 +22,9 @@ const AboutSection = () => (
             consistent as projects grow.
         </p>
         <p data-aos="fade-left" data-aos-duration="800">
-            Alongside web development, I’m also an expert in <span className="text-light">Adobe
-                Photoshop</span>, <span className="text-light">Premiere Pro</span>,
-            and <span className="text-light">After Effects</span>,
+            Alongside web development, I’m also an expert in <span className="text-emphasis">Adobe
+                Photoshop</span>, <span className="text-emphasis">Premiere Pro</span>,
+            and <span className="text-emphasis">After Effects</span>,
             which allows me to
             produce high-quality <b>UI mockups</b>, <b>motion graphics</b>, and polished <b>video
                 content</b> for product demos

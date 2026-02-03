@@ -2,7 +2,7 @@ import SocialLinks from './SocialLinks';
 import '../css/style.css';
 import image from '../assets/profile-pic.png';
 
-const Sidebar = ({ activeSection }) => {
+const Sidebar = ({ activeSection, theme, onToggleTheme }) => {
     return (
         <header>
             <div data-aos="fade-right" data-aos-duration="500" data-aos-once="true" className='aboutdiv'>
@@ -16,11 +16,25 @@ const Sidebar = ({ activeSection }) => {
                         />
                     </a>
                 </div>
-                <h1 className='text-light'>M. Aaman Butt</h1>
-                <h2 className="h6 text-light">MERN Stack Developer</h2>
+                <h1 style={theme === 'dark' ? { color: 'white' } : { color: 'black' }} >M. Aaman Butt</h1>
+                <h2 className="h6" style={theme === 'dark' ? { color: 'white' } : { color: 'black' }}>MERN Stack Developer</h2>
                 <p className="tagline">
                     I build accessible, pixel-perfect digital experiences for the web.
                 </p>
+                <div className="theme-toggle">
+                    <button
+                        type="button"
+                        className="theme-toggle-btn"
+                        onClick={onToggleTheme}
+                        data-theme={theme}
+                        aria-pressed={theme === 'dark'}
+                        aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+                    >
+                        <span className="theme-toggle-label">Theme</span>
+                        <span className="theme-toggle-value">{theme === 'dark' ? 'Dark' : 'Light'}</span>
+                        <span className="theme-toggle-indicator" aria-hidden="true" />
+                    </button>
+                </div>
 
                 <nav>
                     <ul className="d-flex flex-row flex-md-column flex-wrap justify-content-center justify-content-md-start mb-4">
