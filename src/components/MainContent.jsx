@@ -6,6 +6,7 @@ import creativeDigitalAgencyImage from '../assets/projects/creative-digital-agen
 import myWebsiteImage from '../assets/projects/my-website.png';
 import fastFoodRestaurantImage from '../assets/projects/fast-food-restaurant.png';
 import mikonProjectImage from '../assets/projects/mikon-project.png';
+import numberGuessingGameImage from '../assets/projects/number-guessing-game.png';
 import '../css/style.css';
 import Footer from './Footer';
 
@@ -16,6 +17,12 @@ const MainContent = () => {
             description: "I built this professional business platform using React and Custom CSS without external libraries. It is fully responsive, helping brands launch, grow, and increase earnings through services like development, integration, and branding.",
             projectimage: mikonProjectImage,
             link: "https://mikon.vercel.app/"
+        },
+        {
+            title: "Number Guessing Game",
+            description: "I built this Number Guessing Game with React, a fun interactive project where players guess a random number between 1 and 100, and get instant feedback. It sharpened my skills in state management, logic, and UI design.",
+            projectimage: numberGuessingGameImage,
+            link: "https://number-guessing-game-react-delta.vercel.app/"
         },
         {
             title: "BR-Architects",
