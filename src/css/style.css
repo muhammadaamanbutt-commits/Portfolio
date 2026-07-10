@@ -492,6 +492,12 @@ nav a.active::before {
 
 /*Thumbnails */
 
+.project-card .thumbnail-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
 .thumbnail-container .thumbnail {
     width: 100%;
     aspect-ratio: 16 / 9;
