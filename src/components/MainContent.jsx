@@ -5,6 +5,7 @@ import brarchitectsImage from '../assets/projects/br-architects.png';
 import creativeDigitalAgencyImage from '../assets/projects/creative-digital-agency.png';
 import myWebsiteImage from '../assets/projects/my-website.png';
 import fastFoodRestaurantImage from '../assets/projects/fast-food-restaurant.png';
+import airCanvasImage from '../assets/projects/air-canvas.png';
 import mikonProjectImage from '../assets/projects/mikon-project.png';
 import numberGuessingGameImage from '../assets/projects/number-guessing-game.png';
 import '../css/style.css';
@@ -17,6 +18,12 @@ const MainContent = () => {
             description: "I built this professional business platform using React and Custom CSS without external libraries. It is fully responsive, helping brands launch, grow, and increase earnings through services like development, integration, and branding.",
             projectimage: mikonProjectImage,
             link: "https://mikon.vercel.app/"
+        },
+        {
+            title: "Air Canvas",
+            description: "I built this immersive 3D drawing web app using React and MediaPipe hand tracking. Draw in mid-air with just your hand or use touch/mouse, pick from a vibrant color palette, and create art in real time, all running smoothly in the browser.",
+            projectimage: airCanvasImage,
+            link: "https://3d-drawings-aaman.vercel.app/"
         },
         {
             title: "Number Guessing Game",
