@@ -21,7 +21,7 @@ const MainContent = () => {
             link: "https://elodiemarshportfolio.github.io/portfolio/"
         },
         {
-            title: "Mikon-Project",
+            title: "Mikon.",
             description: "I built this professional business platform using React and Custom CSS without external libraries. It is fully responsive, helping brands launch, grow, and increase earnings through services like development, integration, and branding.",
             projectimage: mikonProjectImage,
             link: "https://mikon.vercel.app/"
@@ -45,19 +45,19 @@ const MainContent = () => {
             link: "https://br-architects-kappa.vercel.app/"
         },
         {
-            title: "Fast-Food-Restaurant",
+            title: "Feane Restaurant",
             description: "I engineered this responsive fast-food platform featuring an interactive menu system, promotional discount management, and an integrated table booking module. The site optimizes the digital dining experience through clean, intuitive navigation.",
             projectimage: fastFoodRestaurantImage,
             link: "https://fast-food-restaurant-red.vercel.app/"
         },
         {
-            title: "Nexus-Connect",
+            title: "Nexus Connect",
             description: "I developed this professional business platform featuring seamless integrations with Google, Facebook, and Instagram. The site includes specialized sections for blogging, strategic pricing, and system integrations, ensuring a streamlined digital experience.",
             projectimage: myWebsiteImage,
             link: "https://my-website-two-vert.vercel.app/"
         },
         {
-            title: "Creative-Digital-Agency",
+            title: "Brandoxide - Digital Agency",
             description: "I developed this comprehensive digital agency platform offering specialized web development, graphic design, and marketing services. It features structured pricing plans, client testimonials, and a blog to ensure professional brand building.",
             projectimage: creativeDigitalAgencyImage,
             link: "https://creative-digital-agency-jet.vercel.app/"
