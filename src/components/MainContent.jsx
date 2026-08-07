@@ -9,11 +9,19 @@ import airCanvasImage from '../assets/projects/air-canvas.png';
 import mikonProjectImage from '../assets/projects/mikon-project.png';
 import elodieMarshImage from '../assets/projects/elodie-marsh-portfolio.png';
 import numberGuessingGameImage from '../assets/projects/number-guessing-game.png';
+import semanticCompassImage from '../assets/projects/semantic-compass.png'
+
 import '../css/style.css';
 import Footer from './Footer';
 
 const MainContent = () => {
     const myProjects = [
+        {
+            title: "Semantic Compass",
+            description: "I built an intelligent semantic search and exploration platform using React and modern web technologies, featuring advanced natural language processing that transforms how users discover and connect information across complex knowledge domains on any device.",
+            projectimage: semanticCompassImage,
+            link: "https://semantic-compass.vercel.app/"
+        },
         {
             title: "Elodie Marsh Portfolio",
             description: "I built this immersive barista portfolio using React and custom CSS, blending elegant typography, playful coffee-inspired visuals, and smooth responsiveness to bring Elodie’s craft, personality, and journey to life on every screen.",
